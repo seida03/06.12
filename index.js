@@ -57,7 +57,7 @@ function createcard(product) {
     // let btns=document.querySelectorAll("btn")
     btn.addEventListener("click", function(){
         
-        if(basket.some(x=>x.product.img==)){
+     
 
             count++;
     
@@ -66,10 +66,7 @@ function createcard(product) {
     
             basket.push({img:this.parentElement.parentElement.firstElementChild.src,Count:count})
             window.localStorage.setItem("basket", JSON.stringify(basket))
-        }
-        else{
-            basket
-        }
+       
     })
 
 }
